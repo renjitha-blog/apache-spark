@@ -1,0 +1,32 @@
+[
+		{
+			"Quantity": "16",
+			"Purchase Price": "26.831",
+			"Purchase Date": "2010-07-11",
+			"Stock Name": "IRCTC"
+		},
+		{
+			"Quantity": "24",
+			"Purchase Price": "10.062",
+			"Purchase Date": "2013-11-01",
+			"Stock Name": "IOCL"
+		},
+		{
+			"Quantity": "13",
+			"Purchase Price": "26.744",
+			"Purchase Date": "2017-12-03",
+			"Stock Name": "NESTLE"
+		},
+		{
+			"Quantity": "65",
+			"Purchase Price": "68.307",
+			"Purchase Date": "2019-09-03",
+			"Stock Name": "UNILEVER"
+		},
+		{
+			"Quantity": "88",
+			"Purchase Price": "74.381",
+			"Purchase Date": "2014-10-11",
+			"Stock Name": "HAL"
+		}
+	]

@@ -6,6 +6,11 @@ import org.slf4j.LoggerFactory;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.sql.Dataset;
+import org.apache.spark.sql.Row;
+import org.apache.spark.sql.SparkSession;
+import static org.apache.spark.sql.functions.col;
+
 import java.io.*;
 
 public class Library {
@@ -13,6 +18,22 @@ public class Library {
 	public static void main(String[] args) throws IOException {
 		Logger log = LoggerFactory.getLogger(Library.class);
 
+		//rddExample(log);
+		SparkSession spark = SparkSession
+				  .builder()
+				  .appName("Spark SQL")
+				  .master("local[*]")
+				  .getOrCreate();
+		Dataset<Row> df = spark.read().option("multiline","true").json("src/main/resources/StockPurchaseData.json");
+		// Displays the content of Stock Name column to console
+		df.select("Stock Name").show();
+		log.info("No:of rows:{}",df.count());
+		// Select Quantity greater than 20
+		df.filter(col("Quantity").gt(20)).show();
+		spark.close();
+	}
+
+	private static void rddExample(Logger log) {
 		SparkConf conf = new SparkConf().setAppName("startingSpark").setMaster("local[*]");
 		JavaSparkContext sc = new JavaSparkContext(conf);
 
@@ -53,7 +74,6 @@ public class Library {
 		log.info("FirstElement: {}", firstElement);
 
 		sc.close();
-
 	}
 
 }
