@@ -1,0 +1,62 @@
+[
+		{
+			"Quantity": 16,
+			"Purchase Price": 26.831,
+			"Purchase Date": "2010-07-11",
+			"Stock Name": "IRCTC"
+		},
+		{
+			"Quantity": 24,
+			"Purchase Price": 10.062,
+			"Purchase Date": "2013-11-01",
+			"Stock Name": "IOCL"
+		},
+		{
+			"Quantity": 13,
+			"Purchase Price": 26.744,
+			"Purchase Date": "2017-12-03",
+			"Stock Name": "NESTLE"
+		},
+		{
+			"Quantity": 65,
+			"Purchase Price": 68.307,
+			"Purchase Date": "2019-09-03",
+			"Stock Name": "UNILEVER"
+		},
+		{
+			"Quantity": 56,
+			"Purchase Price": 74.381,
+			"Purchase Date": "2014-10-11",
+			"Stock Name": "IOCL"
+		},
+		{
+			"Quantity": 32,
+			"Purchase Price": 45.81,
+			"Purchase Date": "2015-04-06",
+			"Stock Name": "IOCL"
+		},
+		{
+			"Quantity": 9,
+			"Purchase Price": 32.09,
+			"Purchase Date": "2012-06-04",
+			"Stock Name": "IOCL"
+		},
+		{
+			"Quantity": 23,
+			"Purchase Price": 65.39,
+			"Purchase Date": "2014-07-11",
+			"Stock Name": "IRCTC"
+		},
+		{
+			"Quantity": 21,
+			"Purchase Price": 21.765,
+			"Purchase Date": "2018-05-18",
+			"Stock Name": "NESTLE"
+		},
+		{
+			"Quantity": 830,
+			"Purchase Price": 70.435,
+			"Purchase Date": "2019-12-10",
+			"Stock Name": "NESTLE"
+		}
+	]
